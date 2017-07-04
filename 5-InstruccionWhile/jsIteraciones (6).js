@@ -4,6 +4,10 @@ function Mostrar()
 	var contador=0;
 	var acumulador=0;
 
+	while(contador)
+
+
+
 
 
 document.getElementById('suma').value=acumulador;
