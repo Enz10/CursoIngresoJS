@@ -10,10 +10,6 @@ if(Edad>=18 && EstadoCivil=="Soltero")
 }
 
 
-
-
-
-
 else
 {}
 

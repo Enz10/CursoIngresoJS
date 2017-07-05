@@ -8,9 +8,7 @@ function Mostrar()
 	while(contador<=5)
 	{
 		contador=prompt("Ingrese un número.");
-		acumulador=(acumulador+acumulador+acumulador+acumulador+acumulador);
-		promedio=acumulador/5;
-		continue;
+		
 
 		
 
