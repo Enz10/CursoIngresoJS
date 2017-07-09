@@ -4,15 +4,20 @@ function Mostrar()
 	var contador=1;
 	var acumulador=0;
 	var promedio=0;
+	var numero=0;
+
+	
 
 	while(contador<=5)
 	{
-		contador=prompt("Ingrese un número.");
-		
+		numero=parseInt(prompt("Ingrese un número."));
+		acumulador+=numero;
+		contador++;		
 
 		
 
 	}
+promedio= acumulador/5;
 
 
 
