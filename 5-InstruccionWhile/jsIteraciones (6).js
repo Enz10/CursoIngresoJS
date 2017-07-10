@@ -11,6 +11,11 @@ function Mostrar()
 	while(contador<=5)
 	{
 		numero=parseInt(prompt("Ingrese un número."));
+		while(isNaN(numero))
+		{
+			numero=parseInt(prompt("No funk"));
+			console.log(numero);
+		}
 		acumulador+=numero;
 		contador++;		
 
