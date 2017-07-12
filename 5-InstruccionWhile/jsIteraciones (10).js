@@ -2,7 +2,7 @@ function Mostrar()
 {
     var numero;
 	var respuesta=true;
-	var canPos=0;
+	var canPos=0;//inicializo porque vamos a sumar
 	var canNeg=0;
 	var canCeros=0;
 	var canPares=0;
@@ -26,7 +26,7 @@ function Mostrar()
 
 		if(numero<0)
 		{
-			acumNeg+=numero;//sumo neg
+			acumNeg+=numero;//sumo neg  acumneg=acumneg+num
 			canNeg++;       //cuento neg
 		}
 		else if(numero>0)
@@ -34,7 +34,7 @@ function Mostrar()
 			acumPos+=numero;//sumo pos
 			canPos++;       //cuento pos
 		}
-		else if(numero==0)
+		else
 		{
 			canCeros++;  // cantidad de 0
 		}
@@ -44,18 +44,43 @@ function Mostrar()
 			canPares++;
 		}
 
-
 	        respuesta=confirm("¿Desea seguir ingresando números?")
 		
-		
-
 	}
 
 
-	promPos=acumPos/canPos;
-	promNeg=acumNeg/canNeg;
+	if(canNeg>0)// o != porque es un contador nunca empieza en negativo
+	{
+		promNeg=acumNeg/canNeg;//para que no de NaN
+	}
+	else
+	{
+		promNeg=("No ingresó números negativos");
+	}
 
-	difPosNeg=acumPos-acumNeg;
+	if(canPos>0)
+	{
+		promPos=acumPos/canPos;
+	}
+	else
+	{
+		promPos=("No ingresó números positivos.");
+	}
+
+
+	difPosNeg=canPos-canNeg;
+
+
+	if(difPosNeg<0)
+	{
+		difPosNeg=difPosNeg*-1;//para que se haga positivo
+	}
+
+	else
+	{
+		difPosNeg=difPosNeg*+1;
+	}
+
 
 	document.write("La suma de números negativos es: "+acumNeg+ "<br>");
 	document.write("La suma de números positivos es: "+acumPos+ "<br>");
