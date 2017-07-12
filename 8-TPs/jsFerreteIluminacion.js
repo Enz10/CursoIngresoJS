@@ -70,12 +70,13 @@ function CalcularPrecio ()
     else
     {
         preciodesc=(cant*lamp);
+        alert("Precio sin descuento.");
     }
 
     if(preciodesc>120)
     {
         preciodesc=(preciodesc+(preciodesc*10/100));
-        alert("Usted pago 10% de IIBB.");
+        alert("Usted pago de IIBB.");
     }
 
     document.getElementById("precioDescuento").value=preciodesc;
