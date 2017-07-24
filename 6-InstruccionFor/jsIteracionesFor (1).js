@@ -1,8 +1,7 @@
 function Mostrar()
 {
-    var Repeticion;
 
-    for(Repeticion=1 ; Repeticion<=10 ; Repeticion=Repeticion+1)
+    for(i=1 ; i<=10 ; i++)
     {
         alert("Número:"+Repeticion);
     }

@@ -11,3 +11,64 @@ function ComenzarIngreso ()
 {
  	
 }
+
+function NumerosPares()
+{
+    var numero=document.getElementById("numero").value;
+    var contadorPar=0;
+
+
+    if(numero<1)
+    {
+        alert("Ingrese un número positivo.")
+    }
+    else
+    {
+        for(i=1;i<numero;i++)
+        {
+            if(i%2==0)
+            {
+                contadorPar++;
+                alert("Hay "+contadorPar+" números pares.");
+            }
+        }
+    }
+}
+
+function NumerosImpares()
+{
+    var numero=document.getElementById("numero").value;
+    var contadorImpares=0;
+
+    if(numero<1)
+    {
+        alert("Ingrese un número positivo");
+    }
+
+    else
+    {
+        for(i=1;i<numero;i++)
+        {
+            if(i%2!=0)
+            {
+                contadorImpares++;
+                alert("Hay "+contadorImpares+" números impares.");
+            }
+        }
+    }
+}
+
+function NumerosDivisibles()
+{
+
+}
+
+function VerificarPrimo()
+{
+
+}
+
+function NumerosPrimos()
+{
+
+}

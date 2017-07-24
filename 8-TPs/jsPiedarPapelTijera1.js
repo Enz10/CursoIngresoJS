@@ -7,7 +7,6 @@ a su opción  y le informaremos si ganó, empató o perdió.
 
 function comenzar()
 {
-	var numero=parseInt(Math.random()*3)+1;
     var acum=0;
     var usuario;
 
@@ -15,6 +14,8 @@ function comenzar()
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
+    	var numero=parseInt(Math.random()*3)+1;
+        console.log(numero);
 	switch(numero)
     {
         case 1 :
@@ -32,10 +33,13 @@ function piedra()
 }//FIN DE LA FUNCIÓN
 function papel()
 {
+    	var numero=parseInt(Math.random()*3)+1;
+        console.log(numero);
+
     switch(numero)
     {
         case 1:
-        alert("Perdedor");
+        alert("Ganador");
         break;
 
         case 2:
@@ -43,7 +47,7 @@ function papel()
         break;
 
         case 3:
-        alert("Ganador");
+        alert("Perdedor");
         break;
     }
 
@@ -51,6 +55,8 @@ function papel()
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
+    	var numero=parseInt(Math.random()*3)+1;
+        console.log(numero);
 	switch(numero)
     {
         case 1:
