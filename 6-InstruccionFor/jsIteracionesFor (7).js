@@ -7,9 +7,9 @@ for(i=1;i<=num;i++)
     if(num%i==0)
     {
         contador++;
-        alert(num)
     }
 }
+        alert("Existen "+contador+" numeros divisores.");
 
 
 }//FIN DE LA FUNCIÓN

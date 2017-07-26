@@ -1,8 +1,14 @@
 function Mostrar()
 {
-for(;i!=9 ;)
+for(i=0; ;i++)
 {
-    prompt("entra numbrer");
+    var num=prompt("Ingrese el número 9 para finalizar.");
+    if(num==9)
+    {
+        break;
+    }
+    console.log(i);
+    console.log("Ingresando: "+num);
 }
 
 

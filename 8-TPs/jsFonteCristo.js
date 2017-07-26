@@ -49,7 +49,7 @@ function NumerosImpares()
     {
         for(i=1;i<numero;i++)
         {
-            if(i%2!=0)
+            if(i%2==1)
             {
                 contadorImpares++;
                 alert("Hay "+contadorImpares+" números impares.");
@@ -60,7 +60,26 @@ function NumerosImpares()
 
 function NumerosDivisibles()
 {
+    var numero=document.getElementById("numero").value;
+    var contadorDiv=0;
 
+    if(numero<1)
+        {
+            alert("Ingrese un número positivo.");
+        }
+    
+    else
+    {
+
+     for(i=1;i<=numero;i++)
+        {
+            if(numero%i==0)
+            {
+                  contadorDiv++;
+                  alert("Hay "+contadorDiv+" numeros divisibles");
+            }
+        }
+    }
 }
 
 function VerificarPrimo()

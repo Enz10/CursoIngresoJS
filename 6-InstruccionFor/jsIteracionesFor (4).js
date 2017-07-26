@@ -1,10 +1,10 @@
 function Mostrar()
 {
 var repe;
-for(i=0; i>repe;i++)
+for(i=0; ;i++)
 {
-    repe=prompt("ingrese");
-     if(repe="break");
+    console.log("mensaje "+i);
+     if(i=1000);
      {
           break;
      }
