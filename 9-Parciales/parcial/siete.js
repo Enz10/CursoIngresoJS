@@ -14,7 +14,7 @@ function Mostrar()
   if(notas>=0 && notas<=10 && sexo=="f" || sexo=="m")
    {
       acumNotas+=notas;
-      prom=notas/alum;
+      prom=acumNotas/alum;
       alert("su prom es" +prom);      
    }
   }
