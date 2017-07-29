@@ -48,7 +48,7 @@ function Mostrar()
           }
 
           acumNotas=notas+acumNotas;
-          alert("El promedio de todos los alumnos es: "+acumNotas);
+          alert("El promedio de todos los alumnos es: "+prom);
   }
         prom=acumNotas/alum;
 }
