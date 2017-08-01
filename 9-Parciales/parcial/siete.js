@@ -17,8 +17,8 @@ function Mostrar()
 
       while(isNaN(notas) || notas<0 || notas>10)
         {
-      notas=prompt("Ingrese solo números del 0 al 10.");
-      notas=parseInt(notas);  
+          notas=prompt("Ingrese solo números del 0 al 10.");
+          notas=parseInt(notas);  
         }
       sexo=prompt("Ingrese su sexo('f' o 'm'");
 

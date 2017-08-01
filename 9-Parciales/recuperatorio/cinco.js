@@ -1,7 +1,7 @@
 function Mostrar()
 {
     var mes=prompt("Ingrese un mes.");
-    mes.toLowerCase();
+    
     switch(mes)
     {
         case "Diciembre":
